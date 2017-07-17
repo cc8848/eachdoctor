@@ -1,18 +1,87 @@
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
     max-height: 320px;
 }
+.header{
+
+}
+
 .navbar{
 	min-height: 80px;
 }
+
+/*导航条a链接的字体*/
 .navbar-inverse .navbar-nav>li>a{
 	font-size: 16px;
 }
+
+@media (max-height: 768px){
+	/* 三行杠-按钮 */	
+	.header .navbar_button{
+		margin-top: 24px;
+	}
+	/*登录与注册中间的1竖*/
+	.header .reg_log>li>a.h{
+		display: none;	}
+	/*头部导航logo*/
+	.header .nav_img{
+		width: 200px;
+		height: 75px;
+	}	
+
+}
+
 @media (min-width: 768px){
+	/*头部导航logo*/
+	.header .nav_img{
+		padding: 4px 10px 0 0;
+		width: 300px;
+		height: 75px;
+	}
+	/* 顶部导航条 */
 	.navbar-nav>li>a {
 	    padding-top: 30px;
 	    padding-bottom: 30px;
 	}
+	.header .reg_log>li>a.register{
+		padding: 31px 0 29px 15px;
+		font-size: 14px;
+	}
+	.header .reg_log>li>a.login{
+		padding: 31px 50px 29px 0;
+		font-size: 14px;
+	}
+	.header .reg_log>li>a.h{
+		font-size: 16px;
+		padding: 30px 6px;
+		display: block;
+	}
+	/*导航条字体间距*/
+	.navbar-inverse .navbar-nav>li>a{
+		padding: 30px 20px;
+	}		
+
+
 }
+
+@media (min-width: 1200px){
+	/* 搜索框 */
+	.header .search{
+		padding: 15px 20px;
+	}
+
+
+}
+
+/* 导航条a的点击和鼠标悬停 后的效果 */
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #fff;
+    background-color: #080808;
+}
+.navbar-inverse .navbar-nav>li>a.bg_transparent:focus, .navbar-inverse .navbar-nav>li>a.bg_transparent:hover {
+    color: #fff;
+    background-color: transparent;
+}
+
 
 
 
