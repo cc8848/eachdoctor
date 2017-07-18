@@ -104,7 +104,7 @@ footer{
 	-webkit-align-items: center; 
 }
 footer h1{
-	font-size:20px;
+	font-size:18px;
 	color: rgba(157, 157, 157,0.8);
 	line-height: 26px;
 }
@@ -129,6 +129,7 @@ footer h1{
 	.header .reg_log>li>a.h{
 		display: none;	}
 	/*头部导航logo*/
+
 	.header .nav_img{
 		width: 260px;
 		height: 80px;
@@ -159,8 +160,10 @@ footer h1{
 
 @media (min-width: 768px){
 	/*头部导航logo*/
-	.header .nav_img{
+
+	.container .header .nav_img{
 		padding:5px 10px 4px;
+		margin-left: -10px;
 		width: 300px;
 		height: 80px;
 	}
