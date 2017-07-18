@@ -17,16 +17,6 @@ a:focus, a:hover {
 	    padding-right: 0;
 	}
 }
-@media screen and (max-width:767px){
-	body{
-	    padding-top: 20px;
-	    color:#fff;
-	}
-}
-
-.container{
-	position:relative;
-}
 
 
 
