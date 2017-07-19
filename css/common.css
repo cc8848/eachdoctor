@@ -92,16 +92,23 @@ footer{
 	min-height: 80px;
 	background: rgb(34,34,34);
 	text-align: center;
-	display: -webkit-flex;  
-	display: -ms-flexbox;  
-	display: flex;   
-	display: -moz-box;    
+
 	display: -webkit-box;
+	display: -moz-box;    
+	display: -ms-flexbox;  
+	display: -webkit-flex;  
+	display: flex;
+
 	-webkit-box-align: center; 
 	-moz-box-align: center;
-	-ms-flex-align: center;
+	-ms-flex-align: center; 
+	-webkit-box-pack: center; 
+	-moz-box-pack: center; 
+	-ms-flex-pack: center;
 	align-items: center;
 	-webkit-align-items: center; 
+	justify-content: center;
+	-webkit-justify-content: center;
 }
 footer h1{
 	font-size:18px;
@@ -111,16 +118,12 @@ footer h1{
 
 
 
-@media (max-width: 1200px) and (min-width: 768px){
-	body{
-		padding-top: 140px;
-	}
-}
 
 @media (max-width: 768px){
 	body{
 		padding-top: 90px;
 	}
+
 	/* 三行杠-按钮 */	
 	.header .navbar_button{
 		margin-top: 24px;
@@ -134,11 +137,14 @@ footer h1{
 		width: 260px;
 		height: 80px;
 		padding:0 10px;
+		padding-top:10px\0;
+
 		display: -webkit-flex;  
 		display: -ms-flexbox;  
 		display: flex;   
 		display: -moz-box;    
 		display: -webkit-box;
+		
 		-webkit-box-align: center; 
 		-moz-box-align: center;
 		-ms-flex-align: center;
@@ -155,7 +161,17 @@ footer h1{
 		top: 0;
 		padding:10px 10px 4px;
 	}
+	/*底部版权*/
+	footer{
+		padding-top:15px\0;
+	}
 	
+}
+@media screen and (min-width: 580px) {
+	/*底部版权*/
+	footer{
+		padding-top:28px\0;
+	}
 }
 
 @media screen and (min-width: 768px){
@@ -201,6 +217,12 @@ footer h1{
 	}		
 	
 
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+	body{
+		padding-top: 140px;
+	}
 }
 
 @media (min-width: 1200px){
